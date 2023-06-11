@@ -120,24 +120,31 @@ main button:hover{
 @media screen and (max-width:1100px){
   main{
     padding: 44px 30px;
-    width: 90%;
+    width: 75%;
+  }
+  main h1{
+    font-size: 3em;
+    margin-top: 0;
+  }
+  .ilustracao-principal{
+    border-radius: 1.125rem;
   }
   .line{
     margin-top: 40px;
   }
   main p{
-    font-size: 24px;
+    font-size: 18px;
   }
   .icons{
     justify-content: left;
     align-items: left;
   }
   .icons img{
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
   }
   main button{
-    font-size:16px;
+    font-size:12px;
   }
 
 }
