@@ -1,0 +1,143 @@
+body{
+  margin: 0;
+}
+.background{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgb(117,218,144);
+  background: linear-gradient(180deg, rgba(117,218,144,1) 29%, rgba(0,76,139,1) 100%);
+}
+body{
+  display: flex;
+  justify-content: center;
+}
+main{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 50;
+  margin: 4rem 0;
+  width: 900px;
+  padding: 30px 90px;
+  background-color: white;
+  border-radius: 1.5rem;
+  font-family: "Inter",monospace;
+}
+main h1{
+  font-size: 3.5em;
+  line-height: 1.2;
+  color: #524845;
+}
+.ilustracao-principal{
+  max-width: 1000px;
+  max-height: 600px;
+  border-radius: 1.5rem;
+}
+.line{
+  width:100%;
+  height: 0px;
+  margin: 100px 0 25px;
+  border: 1px solid rgba(0, 0, 0, 0.054);
+}
+main p {
+  color: rgba(3, 37, 16, 0.774);
+  font-size: 28px;
+  line-height: 2;
+  font-weight: bold;
+}
+.icons{
+  display: flex;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+.icons img{
+  width: 35px;
+  height: 35px;
+  padding: 15px;
+  animation: animarIconeVolta .4s forwards;
+}
+.icons img:hover{
+  background-color: #eeba53;
+  border-radius: 22px;
+  animation: animarIconeIda .4s forwards;
+}
+@keyframes animarIconeIda {
+  from{
+    transform: translate3d(0,0,0);
+  }
+  to{
+    transform:translate3d(0,-15px,0)
+  }
+}
+@keyframes animarIconeVolta {
+  from{
+    transform: translate3d(0,-15px,0);
+  }
+  to{
+    transform:translate3d(0,0,0)
+  }
+}
+
+main button{
+font-family: "Inter",monospace;
+font-weight: bold;
+padding: 20px 30px;
+margin-bottom: 20px;
+cursor: pointer;
+background-color: #4EA89E;
+background-image:linear-gradient(289deg, #63D4C7 29%, rgba(79,168,158,0.008) 0%);
+border: none;
+width: 100%;
+border-radius: 10px;
+color: white;
+text-align: left;
+font-size: 20px;
+animation: animarParaOLadoVolta .4s forwards
+}
+main button:hover{
+  animation: animarParaOLadoIda .4s forwards
+}
+@keyframes animarParaOLadoIda{
+  from{
+    transform: translate3d(0,0,0);
+  }
+  to{
+    transform: translate3d(20px,0,0);
+  }
+}
+@keyframes animarParaOLadoVolta{
+  from{
+    transform: translate3d(20px,0,0);
+  }
+  to{
+    transform: translate3d(0,0,0);
+  }
+}
+
+@media screen and (max-width:1100px){
+  main{
+    padding: 44px 30px;
+    max-width: 330px;
+  }
+  .line{
+    margin-top: 40px;
+  }
+  main p{
+    font-size: 24px;
+  }
+  .icons{
+    justify-content: left;
+    align-items: left;
+  }
+  .icons img{
+    width: 30px;
+    height: 30px;
+  }
+  main button{
+    font-size:16px;
+  }
+
+}
