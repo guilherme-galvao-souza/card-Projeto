@@ -13,7 +13,7 @@ body{
 body{
   display: flex;
   justify-content: center;
-  animation: initBody 1s forwards;
+  animation: initBody 2s forwards;
 }
 @keyframes initBody{
   from{
